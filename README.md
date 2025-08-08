@@ -19,6 +19,3 @@ Hero · Fonctionnalités · Profils · Avis · Contact · Footer · Back-to-top
 ## 🖼️ Assets
 - Favicon / Logo : `assets/logo.svg`
 - Avatars démo : https://pravatar.cc/
-
-## 📝 Licence
-MIT
