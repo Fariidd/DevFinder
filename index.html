@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DevFinder — Landing</title>
+  <meta name="description" content="Landing page moderne 100% HTML/CSS : UI, responsive, accessibilité, animations.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Lien accessibilité pour sauter au contenu -->
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="container nav" role="navigation" aria-label="Navigation principale">
+      <a href="#" class="brand">DevFinder</a>
+      <nav aria-label="Liens">
+        <a class="nav__link" href="#features">Fonctionnalités</a>
+        <a class="nav__link" href="#profiles">Profils</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="contenu">
+    <!-- Section Hero -->
+    <section class="section hero container">
+      <h1 class="hero__title">
+        Trouvez le dev parfait <span class="gradient-text">en un clic</span>
+      </h1>
+      <p class="hero__subtitle">
+        Une plateforme fictive pour briller côté UI, responsive et accessibilité.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#profiles">Voir des profils</a>
+        <a class="btn btn--ghost" href="#features">Découvrir</a>
+      </div>
+    </section>
+
+        <!-- Section Fonctionnalités -->
+    <section id="features" class="section container features">
+    <header class="features__head">
+        <h2>Ce que propose <span class="gradient-text">DevFinder</span></h2>
+        <p class="features__sub">
+        Une expérience pensée pour être rapide, claire et efficace — sans sacrifier l’accessibilité.
+        </p>
+    </header>
+
+    <div class="features__grid" role="list">
+        <!-- Card 1 -->
+        <article class="card" role="listitem">
+        <div class="card__icon" aria-hidden="true">
+            <!-- icône filtre (inline SVG) -->
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" aria-hidden="true">
+            <path d="M3 5h18M6 12h12M10 19h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <h3 class="card__title">Filtrage intelligent</h3>
+        <p class="card__text">Trouvez le bon dev par stack, dispo, tarif et avis — sans friction.</p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" role="listitem">
+        <div class="card__icon" aria-hidden="true">
+            <!-- icône message -->
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" aria-hidden="true">
+            <path d="M21 12c0 3.866-4.477 7-10 7-1.25 0-2.45-.154-3.57-.437L3 20l1.53-3.43C4.246 15.45 4.09 14.25 4.09 13 4.09 9.134 8.567 6 14.09 6S21 9.134 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <h3 class="card__title">Messagerie intégrée</h3>
+        <p class="card__text">Discutez en direct, partagez des specs et sécurisez le brief.</p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" role="listitem">
+        <div class="card__icon" aria-hidden="true">
+            <!-- icône étoile -->
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" aria-hidden="true">
+            <path d="M12 3l2.7 5.47 6.05.88-4.38 4.27 1.03 6.01L12 17.77 6.6 19.63l1.03-6.01L3.25 9.35l6.05-.88L12 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <h3 class="card__title">Avis vérifiés</h3>
+        <p class="card__text">Des retours authentiques orientent vos décisions rapidement.</p>
+        </article>
+    </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">© DevFinder — Démo HTML/CSS</div>
+  </footer>
+</body>
+</html>

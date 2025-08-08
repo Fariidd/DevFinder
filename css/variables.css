@@ -1,0 +1,21 @@
+:root{
+  /* Couleurs */
+  --bg: #0b0f19;
+  --surface: #101726;
+  --text: #e6e8ee;
+  --text-muted: #a6aec3;
+  --primary: #6ee7f8;
+  --accent: #a78bfa;
+
+  /* Typo & tailles */
+  --ff-sans: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --fs-900: clamp(2rem, 3.5vw + 1rem, 3rem);
+  --fs-600: 1.125rem;
+
+  /* Rondeurs & ombres */
+  --radius: 14px;
+  --shadow: 0 8px 30px rgb(0 0 0 / 0.35);
+
+  /* Largeur container */
+  --container: 1120px;
+}
