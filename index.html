@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DevFinder — Landing</title>
   <meta name="description" content="Landing page moderne 100% HTML/CSS : UI, responsive, accessibilité, animations.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0b0f19">
+  <meta property="og:image" content="assets/logo.svg">
+
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +19,8 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+
+<body id="top">
   <!-- Lien accessibilité pour sauter au contenu -->
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
@@ -232,7 +237,17 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">© DevFinder — Démo HTML/CSS</div>
+    <div class="container footer__grid">
+      <div class="footer__brand">DevFinder — Démo HTML/CSS</div>
+      <nav class="footer__nav" aria-label="Liens de bas de page">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#profiles">Profils</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </footer>
+
+
+  <a href="#top" class="to-top" aria-label="Revenir en haut">↑</a>
 </body>
 </html>
