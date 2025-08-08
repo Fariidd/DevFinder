@@ -34,7 +34,7 @@
   <!-- MAIN -->
   <main id="contenu">
     <!-- Section Hero -->
-    <section class="section hero container">
+    <section class="section hero container reveal">
       <h1 class="hero__title">
         Trouvez le dev parfait <span class="gradient-text">en un clic</span>
       </h1>
@@ -48,7 +48,7 @@
     </section>
 
         <!-- Section Fonctionnalités -->
-    <section id="features" class="section container features">
+    <section id="features" class="section container features reveal">
       <header class="features__head">
           <h2>Ce que propose <span class="gradient-text">DevFinder</span></h2>
           <p class="features__sub">
@@ -96,7 +96,7 @@
     </section>
 
         <!-- Section Profils -->
-    <section id="profiles" class="section container profiles">
+    <section id="profiles" class="section container profiles reveal">
       <header class="profiles__head">
         <h2>Nos <span class="gradient-text">développeurs</span></h2>
         <p class="profiles__sub">
@@ -133,9 +133,9 @@
         </article>
       </div>
     </section>
-    
+
         <!-- Section Avis -->
-    <section id="testimonials" class="section container testimonials">
+    <section id="testimonials" class="section container testimonials reveal">
       <header class="testimonials__head">
         <h2>Ce que disent nos <span class="gradient-text">clients</span></h2>
         <p class="testimonials__sub">Des retours authentiques pour vous aider à décider sereinement.</p>
@@ -182,6 +182,49 @@
         </figure>
       </div>
     </section>
+
+        <!-- Section Contact -->
+    <section id="contact" class="section container contact reveal">
+      <header class="contact__head">
+        <h2>Contactez <span class="gradient-text">DevFinder</span></h2>
+        <p class="contact__sub">Une question, un projet ? Envoyez-nous un message.</p>
+      </header>
+
+      <form class="form" action="#" method="post" novalidate aria-describedby="contact-help">
+        <div class="form__grid">
+          <!-- Nom -->
+          <div class="field">
+            <label class="label" for="name">Nom</label>
+            <input class="input" type="text" id="name" name="name" placeholder="Votre nom" autocomplete="name" required />
+          </div>
+
+          <!-- Email -->
+          <div class="field">
+            <label class="label" for="email">Email</label>
+            <input class="input" type="email" id="email" name="email" placeholder="vous@exemple.com" autocomplete="email" required />
+          </div>
+        </div>
+
+        <!-- Sujet -->
+        <div class="field">
+          <label class="label" for="subject">Sujet</label>
+          <input class="input" type="text" id="subject" name="subject" placeholder="Sujet du message" required />
+        </div>
+
+        <!-- Message -->
+        <div class="field">
+          <label class="label" for="message">Message</label>
+          <textarea class="textarea" id="message" name="message" placeholder="Décrivez votre besoin..." rows="6" required></textarea>
+        </div>
+
+        <p id="contact-help" class="form__hint">
+          Tous les champs sont requis. Aucune donnée n’est envoyée (démo).
+        </p>
+
+        <button class="btn btn--primary" type="submit">Envoyer le message</button>
+      </form>
+    </section>
+
 
 
 

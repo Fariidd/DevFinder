@@ -251,3 +251,73 @@ a { color: inherit; text-decoration: none; }
 }
 
 
+/* === CONTACT === */
+.contact__head {
+  text-align: center;
+  max-width: 720px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
+.contact__sub { color: var(--text-muted); margin: .5rem 0 0; }
+
+.form { display: grid; gap: 1rem; }
+.form__grid {
+  display: grid; gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px){
+  .form__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.field { display: grid; gap: .4rem; }
+.label { font-weight: 600; }
+.input, .textarea {
+  width: 100%;
+  padding: .85rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(10,19,34,.85);
+  color: var(--text);
+  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.input::placeholder, .textarea::placeholder { color: var(--text-muted); }
+
+.input:focus-visible, .textarea:focus-visible {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(110,231,248,.15);
+}
+
+/* États de validation natifs (HTML5) */
+.input:required:invalid, .textarea:required:invalid {
+  border-color: rgba(239,68,68,.6); /* rouge doux */
+}
+.input:required:valid, .textarea:required:valid {
+  border-color: rgba(52,211,153,.5); /* vert doux */
+}
+
+.form__hint { color: var(--text-muted); font-size: .95rem; }
+
+/* === ANIMATIONS === */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.reveal {
+  opacity: 0;
+  animation: fadeUp .5s cubic-bezier(.2,.8,.2,1) .05s both;
+}
+.reveal--delay-1 { animation-delay: .1s; }
+.reveal--delay-2 { animation-delay: .2s; }
+.reveal--delay-3 { animation-delay: .3s; }
+
+/* Respect des préférences utilisateur */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal--delay-1, .reveal--delay-2, .reveal--delay-3 {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
